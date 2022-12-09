@@ -11,11 +11,12 @@ import Header from './components/Header';
 function App() {
   return (
     <div className='ui container'>
-      
+          <Routes>
+            <Route path='/' element={<Header />} />
+            <Route path='/*' element={<Header />} />
+          </Routes>
       
       <Routes>
-          
-          <Route path='/*' element={<Header />}/>
           <Route path='/' element= {<StreamList />}/>
           <Route path='/streams/new' element= {<StreamCreate />}/>
           <Route path='/streams/edit' element= {<StreamEdit />}/>
