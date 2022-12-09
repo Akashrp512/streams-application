@@ -20,7 +20,7 @@ onAuthChange =()=>{
 }
 
 onSignInClick = () =>{
-    this.auth.SignIn();
+    this.auth.SignIn(); //issue with signIn
 }
 
 onSignOutClick = () =>{
